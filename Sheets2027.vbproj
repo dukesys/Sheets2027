@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>Sheets2027</RootNamespace>
+    <TargetFramework>net10.0-windows</TargetFramework>
+      <ImplicitUsings>enable</ImplicitUsings>
+      <Nullable>enable</Nullable>
+      <Platforms>AnyCPU;x64</Platforms>
+      <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+      <UseWindowsForms>true</UseWindowsForms>
+      <UseWPF>true</UseWPF>
+      <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+  </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="AutoCAD.NET" Version="26.0.0" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\BrowseForFile\BrowseForFile.vbproj" />
+      <ProjectReference Include="..\BrowseForFolder\BrowseForFolder.vbproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Update="My Project\Resources.Designer.vb">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Resources.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+    <ItemGroup>
+      <EmbeddedResource Update="My Project\Resources.resx">
+        <CustomToolNamespace>My.Resources</CustomToolNamespace>
+        <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+        <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+  <PropertyGroup>
+    <NoWarn>$(NoWarn);CA1416</NoWarn>
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
+  </PropertyGroup>
+</Project>

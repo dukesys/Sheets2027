@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Sheets2027": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\Autodesk\\AutoCAD 2027\\acad.exe",
+      "workingDirectory": "$(ProjectDir)"
+    }
+  }
+}

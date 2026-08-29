@@ -1,0 +1,20 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="../BrowseForFile/BrowseForFile.vbproj" Id="b8eb9bc0-bbf3-40e7-b3a1-151cf6226b89">
+    <Platform Solution="Debug|x86" Project="x64" />
+  </Project>
+  <Project Path="../BrowseForFolder/BrowseForFolder.vbproj" Id="d14c0219-c867-44bc-af69-67ee442a4aeb">
+    <Platform Solution="*|x86" Project="x86" />
+    <Build Solution="*|x86" Project="false" />
+  </Project>
+  <Project Path="Sheets2027.vbproj">
+    <Platform Solution="*|Any CPU" Project="x64" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Platform Solution="*|x86" Project="x86" />
+    <Build Solution="*|x86" Project="false" />
+  </Project>
+</Solution>
